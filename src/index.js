@@ -11,6 +11,7 @@ console.log('funguju!');
 
 const pageElm = document.createElement('div');
 pageElm.classList.add('page');
+pageElm.id = 'home';
 
 const mainElm = document.createElement('main');
 mainElm.append(Banner(), Menu(), Gallery(), Contact());

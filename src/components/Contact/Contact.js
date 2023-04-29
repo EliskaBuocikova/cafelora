@@ -2,6 +2,7 @@ import './Contact.css';
 
 export const Contact = () => {
   const element = document.createElement('section');
+  element.id = 'contact';
   element.innerHTML = `
   <div class="container">
   <h2>Kde nás najdete</h2>
