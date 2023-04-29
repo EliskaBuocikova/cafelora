@@ -1,5 +1,7 @@
 import './Drink.css';
 
+import { Layer } from '../Layer/Layer.js';
+
 export const Drink = (props) => {
   const { id, name, ordered, image } = props;
 
@@ -13,8 +15,6 @@ export const Drink = (props) => {
         <div class="drink__info">
           <h3>${name}</h3>
           <div class="layer">
-            <div class="layer__color" style="background-color: #613916"></div>
-            <div class="layer__label">espresso</div>
           </div>
         </div>
       </div>
@@ -23,6 +23,10 @@ export const Drink = (props) => {
           Objednat
         </button>
       </div>`;
+
+  element
+    .querySelector('.layer')
+    .replaceWith(Layer({ color: '#feeeca', label: 'mléčná pěna' }));
 
   return element;
 };
